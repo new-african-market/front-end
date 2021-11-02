@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 
-const Logout = () => {
+const SignUp = () => {
     
     return (
         <div>
@@ -10,4 +10,4 @@ const Logout = () => {
     )
 }
 
-export default Logout;
+export default SignUp;
