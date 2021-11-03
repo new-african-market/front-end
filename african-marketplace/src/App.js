@@ -12,7 +12,7 @@ import Logout from "./components/Logout";
 function App() {
   return (
     <div className="App">
-      <NavBar>
+      <NavBar/>
         <Switch>
           <Route exact path="/">
             <HomePage/>
@@ -27,7 +27,6 @@ function App() {
             <Logout/>
           </Route>
         </Switch>
-      </NavBar>
     </div>
   );
 }
