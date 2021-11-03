@@ -8,6 +8,7 @@ import Login from "./components/Login";
 import HomePage from "./components/HomePage";
 import SignUp from "./components/SignUp";
 import Logout from "./components/Logout";
+import ViewItems from './components/ViewItems';
 
 function App() {
   return (
