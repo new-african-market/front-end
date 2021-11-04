@@ -8,7 +8,7 @@ import Login from "./components/Login";
 import HomePage from "./components/HomePage";
 import SignUp from "./components/SignUp";
 import Logout from "./components/Logout";
-import ViewItems from './components/ViewItems';
+import ViewItems from './components/Items/ViewItems';
 
 function App() {
   return (
@@ -26,6 +26,9 @@ function App() {
           </Route>
           <Route exact path="/logout">
             <Logout/>
+          </Route>
+          <Route exact path="/viewitems">
+            <ViewItems/>
           </Route>
         </Switch>
     </div>

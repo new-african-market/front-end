@@ -12,6 +12,7 @@ const NavBar = () => {
                     <Link to="/login">Login</Link>
                     <Link to="/signup">Sign Up</Link>
                     <Link to="/logout">Logout</Link>
+                    <Link to='/viewitems'>Items</Link>
                 </nav>
             </header>
         </div>
