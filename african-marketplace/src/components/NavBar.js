@@ -13,6 +13,7 @@ const NavBar = () => {
                     <Link to="/signup">Sign Up</Link>
                     <Link to="/logout">Logout</Link>
                     <Link to='/viewitems'>Items</Link>
+                    <Link to='/youritems'>Your Items</Link>
                 </nav>
             </header>
         </div>

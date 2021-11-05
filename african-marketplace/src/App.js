@@ -9,6 +9,8 @@ import HomePage from "./components/HomePage";
 import SignUp from "./components/SignUp";
 import Logout from "./components/Logout";
 import ViewItems from './components/Items/ViewItems';
+//import AddItem from './components/Items/AddItem';
+import YourItems from './components/Items/YourItems';
 
 function App() {
   return (
@@ -29,6 +31,9 @@ function App() {
           </Route>
           <Route exact path="/viewitems">
             <ViewItems/>
+          </Route>
+          <Route exact path="/youritems">
+            <YourItems/>
           </Route>
         </Switch>
     </div>
