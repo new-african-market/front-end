@@ -11,10 +11,25 @@ const ItemList = () => {
         }
 
         const newProducts = [product, ...products]
-
-        setProducts(newProducts);
+        
         console.log(...products);
+        setProducts(newProducts);
+        
     };
+
+    const updateProduct = (productId, newValue) => {
+        if(!newValue.text || /^\s*$/.test(newValue.text)) {
+            return
+        }
+
+        setProducts(prev => prev.map(item => (item.id === productId ? newValue : item )))
+    }
+
+    const removeProduct = id => {
+        const removeArray = [...products].filter(product => product.id !== id)
+
+        setProducts(removeArray);
+    }
 
     const addedProduct = id => {
         let updatedProduct = products.map(product => {
@@ -27,11 +42,13 @@ const ItemList = () => {
 
     return (
         <div>
-            <h1>Here are your added Items!</h1>
+            <h1>Here are your added Products!</h1>
             <ItemForm onSubmit={addProduct}/>
             <Item 
             products={products}
             addedProduct={addedProduct}
+            removeProduct={removeProduct}
+            updateProduct={updateProduct}
             />
         </div>
     )
